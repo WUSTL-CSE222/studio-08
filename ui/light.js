@@ -100,6 +100,6 @@ var light = {
       function onFailure(e) { console.log("getEventStream call failed")
                               console.dir(e) }
       // Subscribe to the stream
-      particle.getEventStream( { name: topic, auth: myParticleAccessToken }).then(onSuccess, onFailure)
+      particle.getEventStream( { name: topic, auth: myParticleAccessToken, deviceId: 'mine' }).then(onSuccess, onFailure)
     }
 }
